@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1#mins,
+h1#secs,
+h1#mili-secs {
+    width: 70px;
+    padding: 18px 15px;
+    margin: 0 auto;
+}
+
+.time-box h1 {
+    color: #02b3b3;
+}
+
+button {
+    width: 75px;
+    padding: 5px;
+    margin: 2px;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    background-image: linear-gradient(#00d8d8, #02a2a2);
+}
+
+.disabled {
+    background-image: linear-gradient(#336d6d, #02a2a2);
+}
+
+.enabled {
+    background-image: linear-gradient(#00d8d8, #02a2a2);
+}
