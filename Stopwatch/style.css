@@ -16,7 +16,7 @@
 }
 
 .content {
-    width: 240px;
+    width: 260px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -25,8 +25,8 @@
 }
 
 .time-box {
-    width: 240px;
-    height: 240px;
+    width: 260px;
+    height: 260px;
     padding: 15px;
     margin: 25px auto;
     border-radius: 50%;
@@ -50,7 +50,7 @@
 }
 
 .time-box h1 {
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .time-box h1:nth-child(even) {
@@ -61,7 +61,7 @@ h1#hrs,
 h1#mins,
 h1#secs,
 h1#mili-secs {
-    width: 62px;
+    width: 65px;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
@@ -77,8 +77,8 @@ h1#mili-secs {
 }
 
 button {
-    width: 70px;
-    padding: 5px;
+    width: 75px;
+    padding: 8px;
     margin: 2px;
     color: #ffffff;
     border-radius: 20px;
@@ -107,7 +107,7 @@ button:active {
 }
 
 .lap-item {
-    font-size: 22px;
+    font-size: 26px;
 }
 
 #laps li {
