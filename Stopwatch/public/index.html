@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="shortcut icon" href="./images/stopwatch icon.png" type="image/x-icon">
+    <!-- Bootstrap CSS cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="main">
+        <section class="content">
+            <div class="time-box d-flex justify-content-between align-items-center">
+                <h1 id="hrs">00</h1>
+                <h1 id="hr-colon">:</h1>
+                <h1 id="mins">00</h1>
+                <h1>:</h1>
+                <h1 id="secs">00</h1>
+                <h1>.</h1>
+                <h1 id="mili-secs">00</h1>
+            </div>
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <button id="reset-btn" onclick="reset(), reset_audio.play()"><i class="fa-solid fa-rotate-left"></i></button>
+                <button id="start-stop-btn" onclick="startStop(), soundPlayPause()"><i class="fa-solid fa-play"></i></button>
+                <button id="lap-btn" onclick="lap(), lap_audio.play()"><i class="fa-solid fa-stopwatch"></i></button>
+            </div>
+            
+            <ul id="laps">
+
+            </ul>
+        </section>
+
+    </section>
+
+
+</body>
+<!-- Bootstrap JS cdn -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+<!-- External JS -->
+<script src="./app.js"></script>
+
+</html>

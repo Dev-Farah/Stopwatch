@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.main {
+    background-image: linear-gradient(#ffffff, #0decec, #00d8d8);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.content {
+    width: 240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.time-box {
+    width: 240px;
+    height: 240px;
+    padding: 15px;
+    margin: 25px auto;
+    border-radius: 50%;
+    color: #02b3b3;
+    background-image: linear-gradient(#00d8d8, #02a2a2);
+    box-shadow: inset rgba(97, 97, 97, 0.12) 0px 1px 3px, rgba(76, 76, 76, 0.24) 0px 1px 2px;
+}
+
+.include-hrs {
+    width: 275px;
+    height: 275px;
+}
+
+.include-hrs-box {
+    width: 275px;
+}
+
+.hrs-box .lap-item {
+    width: 275px;
+    font-size: 26px;
+}
+
+.time-box h1 {
+    font-size: 32px;
+}
+
+.time-box h1:nth-child(even) {
+    color: #00d8d8;
+}
+
+h1#hrs,
+h1#mins,
+h1#secs,
+h1#mili-secs {
+    width: 62px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: inset rgba(97, 97, 97, 0.12) 0px 1px 3px, inset rgba(76, 76, 76, 0.24) 0px 1px 2px;
+}
+
+h1#hrs, 
+h1#mili-secs {
+    width: 45px;
+    font-size: 20px;
+}
+
+button {
+    width: 70px;
+    padding: 5px;
+    margin: 2px;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    background-image: linear-gradient(#00d8d8, #02a2a2);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#laps {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.lap-item {
+    margin: 12px 0;
+    color: #5e5e5e;
+    background-color: #ffffff;
+    width: inherit;
+    padding: 10px 15px;
+    border-radius: 15px;
+    list-style: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.lap-item {
+    font-size: 22px;
+}
+
+#laps li {
+    color: #02b3b3;
+    background-color: #ffffff;
+}
+
+#laps li:nth-child(even) {
+    color: #ffffff;
+    background-image: linear-gradient(#00d8d8, #02a2a2);
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.active {
+    background-image: linear-gradient(#02a2a2, #336d6d);
+}
