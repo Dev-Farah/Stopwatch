@@ -50,7 +50,7 @@
 }
 
 .time-box h1 {
-    font-size: 36px;
+    font-size: 34px;
 }
 
 .time-box h1:nth-child(even) {
@@ -107,7 +107,7 @@ button:active {
 }
 
 .lap-item {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 #laps li {

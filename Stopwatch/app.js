@@ -82,7 +82,8 @@ function startStop() {
         startStopBtn.className = "active";
         playStatus = "started";
         lapBtn.disabled = false;
-        resetBtn.disabled = false;
+        resetBtn.disabled = true;
+        resetBtn.className = "disabled";
     } else {
         clearInterval(interval);
         startStopBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
@@ -90,8 +91,7 @@ function startStop() {
         startStopBtn.classList.remove("active");
         lapBtn.disabled = true;
         lapBtn.className = "disabled";
-        resetBtn.disabled = true;
-        resetBtn.className = "disabled";
+        resetBtn.disabled = false;
     }
 }
 
